@@ -1,5 +1,5 @@
 function Home() {
-    return <div>Precificador Versão 1</div>
+    return <div>Precificador Versão Nova</div>
 }
 
 export default Home
