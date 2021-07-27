@@ -14,6 +14,9 @@ async function PegarStatus(Telefone, response){
         status = person.Status;
       });
     console.log(status);
+
+    response.setHeader('Cache-Control', 's-maxage=10, stale-while-revalidate');
+
     response.json({
         Date: dynamicDate.toGMTString(),
         Status: status
